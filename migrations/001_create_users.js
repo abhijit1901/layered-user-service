@@ -7,7 +7,7 @@ exports.up = async function (knex) {
   await knex.raw('CREATE EXTENSION IF NOT EXISTS "pgcrypto"');
 
   // 2. Create the table
-  // We strictly do NOT use createTableIfNotExists. 
+  // We strictly do NOT use createTableIfNotExists
   // If the table exists, we WANT it to fail so we know our DB is dirty.
   return knex.schema.createTable('users', (table) => {
     table.uuid('id').primary().defaultTo(knex.raw('gen_random_uuid()'));
