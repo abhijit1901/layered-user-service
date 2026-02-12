@@ -161,7 +161,7 @@ Because each file has one job.
 One big file is hard to read and easy to break.
 Small focused files make bugs easier to find and fixes safer.
 
-## 15. Glossary (kid-friendly)
+## 15. Glossary
 - API: a waiter taking your order
 - Route: the door where request enters
 - Controller: the helper who reads request and returns response
